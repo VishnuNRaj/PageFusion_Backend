@@ -116,7 +116,7 @@ export class AuthService {
 
     private async sendVerificationEmail(user: User) {
         const transporter = nodemailer.createTransport({
-            service: 'Gmail',
+            service: 'gmail',
             auth: {
                 user: this.configService.get<string>('EMAIL_USER'),
                 pass: this.configService.get<string>('EMAIL_PASS'),
