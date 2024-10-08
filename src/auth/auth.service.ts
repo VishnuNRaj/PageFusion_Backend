@@ -118,8 +118,8 @@ export class AuthService {
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: this.configService.get<string>('EMAIL_USER'),
-                pass: this.configService.get<string>('EMAIL_PASS'),
+                user: this.configService.get<string>('EMAIL_USER') || "vishnu8240.achu@gmail.com",
+                pass: this.configService.get<string>('EMAIL_PASS') || "jave jfba dgzu zviw",
             },
         });
 
